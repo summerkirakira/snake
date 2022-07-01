@@ -48,6 +48,9 @@ def snake_control(key: pygame.constants):
         snake_engine.set_direction(Direction.LEFT)
     elif key == K_RIGHT:
         snake_engine.set_direction(Direction.RIGHT)
+    elif key == K_r:
+        snake_engine.restart()
+        snake_engine.status = GameStatus.RUNNING
 
 
 def rect_position(point: Point) -> pygame.Rect:

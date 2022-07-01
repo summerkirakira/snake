@@ -294,6 +294,9 @@ class SEngine:
             self._create_new(width=plane_width, height=plane_height)
         self.update_thread.start()
 
+    def restart(self):
+        self._create_new(self.plane_width, self.plane_height)
+
     def update_frame(self) -> bool:
         if self.can_update():
             self.lock.acquire()
