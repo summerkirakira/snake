@@ -1,7 +1,0 @@
-{
-    "screen_width": 800,
-    "screen_height": 800,
-    "block_size": 20,
-    "caption": "贪吃蛇",
-    "is_paused": false
-}
