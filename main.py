@@ -96,6 +96,7 @@ while is_running:
         if event.type == pygame.QUIT:
             is_running = False
             snake_engine.quit_game()
+            continue
         elif event.type == pygame.KEYDOWN:
             snake_control(event.key)
     update_blocks()

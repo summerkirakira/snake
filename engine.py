@@ -322,6 +322,8 @@ class SEngine:
             while not self.is_terminated:
                 while self.engine.status == GameStatus.RUNNING:
                     self.engine.update_frame()
+                    if self.is_terminated:
+                        break
                     time.sleep(self.engine.Const().frame_interval / 10 / 1000)
 
 
